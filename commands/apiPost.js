@@ -33,4 +33,23 @@ apiPost.prototype.command = function (apiUrl, postBody, postHeaders, postAuth, s
     }.bind(this));
 };
 
+var validateContactUs = {
+    contactUnosquare: function() {
+      this.api.pause(1000);
+      const form = getData(); // this is the important part
+      return this.waitForElementVisible('@contactusMenu', 1000)
+        .click('@contactusMenu')
+        .setValue('@companyTextField', form.company)
+        .setValue('@phoneTextField', form.phone)
+        .setValue('@messageTextArea', form.message)
+        .click('@submitBtn')
+        .waitForElementVisible('@nameWarningMsg')
+    }
+  };
+
+
+  function getData() {
+    return require('../dataExternal/unosquareForm'); // Using the correct path is important
+    };
+
 module.exports = apiPost;

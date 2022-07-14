@@ -1,0 +1,14 @@
+module.exports = {
+    'Contains Text' : function(browser) {
+      browser
+      .windowMaximize()
+      .url('https://www.unosquare.com')
+      .waitForElementVisible('body')
+      .assert.containsText("li a[href = '/Services']", 'SERVICES') //This is case Sensitive
+      .verify.not.containsText("li a[href = '/PracticeAreas']", 'PracticeAreas')
+      .assert.containsText("li a[href = '/Industries']", 'INDUSTRIES')
+      .assert.not.containsText("li a[href = 'https://blog.unosquare.com']", 'blog')
+      .verify.containsText("li a[href = 'https://blog.unosquare.com']", 'BLOG');     
+
+    }
+  }

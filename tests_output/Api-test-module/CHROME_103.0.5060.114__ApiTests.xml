@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="2">
+
+  <testsuite name="Api-test-module.ApiTests"
+    errors="0" failures="1" hostname="" id="" package="Api-test-module" skipped="1"
+    tests="2" time="1.077" timestamp="">
+  
+    <testcase name="API Testing - GET Positive" classname="Api-test-module.ApiTests" time="0.6180" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="API Testing - GET Negative" classname="Api-test-module.ApiTests" time="0.4590" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+    
+    <testcase
+      name="API Testing - POST" classname="Api-test-module.ApiTests">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

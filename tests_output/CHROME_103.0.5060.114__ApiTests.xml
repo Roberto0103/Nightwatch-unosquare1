@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="2">
+
+  <testsuite name="ApiTests"
+    errors="0" failures="1" hostname="" id="" package="ApiTests" skipped="0"
+    tests="2" time="1.385" timestamp="">
+  
+    <testcase name="API Testing - GET Positive" classname="ApiTests" time="0.9460" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="API Testing - GET Negative" classname="ApiTests" time="0.4390" assertions="2">
+
+      <failure message="Failed [equal]: (&#39;Bertrand Kulik&#39; == &#39;My Name&#39;) - expected &#34;My Name&#34; but got: &#34;Bertrand Kulik&#34; (1ms)">    at C:\Users\roberto.gonzalez\Documents\Unosquare1\tests\ApiTests.js:24:28
+    at CommandInstance.&lt;anonymous&gt; (C:\Users\roberto.gonzalez\Documents\Unosquare1\commands\apiGet.js:18:5)
+    at Stream.emit (node:events:527:28)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

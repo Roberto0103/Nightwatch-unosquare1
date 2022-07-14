@@ -1,0 +1,14 @@
+/*module.exports = {
+    'Unosquare_Assert' : function(browser) {
+      browser
+      .windowMaximize()
+      .url('https://www.unosquare.com')
+      .waitForElementVisible('body')
+      .assert.attributeContains("li a[href = '/Services']", 'class', 'nav')
+      .verify.attributeContains("li a[href = '/PracticeAreas']",'class','nav-link')
+      .verify.not.attributeContains("li a[href = '/PracticeAreas']",'class','mnbhgiuyoiudgfh');
+    }
+}
+
+
+*/

@@ -1,0 +1,16 @@
+/*module.exports = {
+  'Demo test unosquare' : function(browser) {
+    browser
+    .windowMaximize()
+    .url('https://www.unosquare.com')
+    .waitForElementVisible('body')
+    .assert.visible('xxxx')
+    .url('https://www.google.com')
+    .verify.visible('.non_existing')
+    .url('https://www.amazon.com')
+    .verify.visible ('Mexico');
+  
+  }
+};
+
+*/

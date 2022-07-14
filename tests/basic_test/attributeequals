@@ -1,0 +1,16 @@
+/*module.exports = {
+    'Demo test unosquare' : function(browser) {
+      browser
+      .windowMaximize()
+      .url('https://www.unosquare.com')
+      .waitForElementVisible('body')
+      .assert.attributeEquals("li a[href = '/Services']", 'class', 'nav-link')
+      .assert.attributeEquals("li a[href = '/PracticeAreas']", 'class', 'nav-link')
+      .assert.not.attributeEquals("li a[href = '/PracticeAreas']", 'class', 'kuyfguytfujgvfkuy');
+
+      
+    }
+  };
+
+
+  */

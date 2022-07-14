@@ -1,0 +1,14 @@
+/*module.exports = {
+    'Unosquare_Assert' : function(browser) {
+      browser
+      .windowMaximize()
+      .url('https://www.unosquare.com')
+      .waitForElementVisible('body')
+      .assert.not.cssProperty("li a[href = '/About']", 'font-size', '20px')
+      .assert.cssProperty("li a[href = '/About']",'font-size', '11px')
+      .assert.cssProperty("li a[href = '/Industries']",'font-weight','800')
+      .assert.not.cssProperty("li a[href = '/OurDna']",'padding-right','504px');
+    }
+  };
+
+  */

@@ -3,11 +3,12 @@
             failures="1"
             tests="1">
 
-  <testsuite name="unosquare.Unosquare"
+  <testsuite name="unosquare.unosquare"
     errors="0" failures="1" hostname="" id="" package="unosquare" skipped="0"
-    tests="1" time="6.821" timestamp="">
+    tests="1" time="0.003000" timestamp="">
   
-    <testcase name="test pages validation" classname="unosquare.Unosquare" time="6.821" assertions="1">  <failure message="Timed out while waiting for element &lt;li a[href = &#39;/ContactUs&#39;]&gt; to be visible for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not visible&#34; (5243ms)">    at Object.test pages validation (C:\Users\roberto.gonzalez\Documents\Unosquare1\tests\unosquare\Unosquare.js:9:8)</failure>
+    <testcase name="test pages validation" classname="unosquare.unosquare" time="0.003000" assertions="1">  <failure message="browser.page.mainpage is not a function">TypeError: browser.page.mainpage is not a function
+    at Object.test pages validation (C:\Users\roberto.gonzalez\Documents\Unosquare1\tests\unosquare\unosquare.js:22:36)</failure>
 
     
     </testcase>

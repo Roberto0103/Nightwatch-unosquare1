@@ -1,7 +1,25 @@
 
+module.exports = {
+  url: 'https://www.unosquare.com',
+  elements: {
+    contactusMenu: {
+      selector: "li a[href = '/ContactUs']"
+    },
+    industriesMenu: {
+      selector: "li a[href = '/Industries']"
+    },
+    aboutMenu: {
+      selector: "li a[href = '/About']"
+    },
+    servicesMenu: {
+      selector: "li a[href = '/Services']"
+    }
+  }
+};
 
-   module.exports = {
+  module.exports = {
     'test pages validation' : function(browser) {
+      
       var unosquare = browser.page.mainpage();
 
       unosquare
@@ -9,7 +27,12 @@
       .waitForElementVisible('@contactusMenu')
       .click('@contactusMenu')
       .click('@industriesMenu')
-      browser.end();
+      .assert.cssProperty("li a[href = '/About']", 'display', 'block')
+      .assert.containsText("li a[href = '/Services']", "SERVICES")
+      .assert.attributeContains("li a[href = '/Services']", 'class', 'nav')
+      .assert.not.attributeContains("li a[href = '/service']", 'class', 'nav')
+      .assert.titleContains('Nightwatch.js')
+      .assert.urlEquals('https://www.unosquare.com/')
+      
     }
-  };
-  
+  }

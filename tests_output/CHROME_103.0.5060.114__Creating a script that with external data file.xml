@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="Creating a script that with external data file"
+    errors="0" failures="0" hostname="" id="" package="Creating a script that with external data file" skipped="0"
+    tests="1" time="7.360" timestamp="">
+  
+    <testcase name="Demo test unosquare" classname="Creating a script that with external data file" time="7.360" assertions="9">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

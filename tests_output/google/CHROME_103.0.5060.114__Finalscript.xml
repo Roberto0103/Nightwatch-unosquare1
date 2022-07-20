@@ -3,11 +3,25 @@
             failures="0"
             tests="1">
 
-  <testsuite name="google.google"
+  <testsuite name="google.Finalscript"
     errors="0" failures="0" hostname="" id="" package="google" skipped="0"
-    tests="1" time="1.745" timestamp="">
+    tests="1" time="6.692" timestamp="">
   
-    <testcase name="Unosquare" classname="google.google" time="1.745" assertions="2">
+    <testcase name="Demo test unosquare" classname="google.Finalscript" time="6.692" assertions="9">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 

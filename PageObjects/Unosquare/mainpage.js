@@ -25,11 +25,10 @@ var validateIndustries = {
   }
 };
 
-
 module.exports = {
   url: 'https://www.unosquare.com',
-  commands: [validateContactUs, validateIndustries],
   elements: {
+    
     contactusMenu: {
       selector: "li a[href = '/ContactUs']"
     },
@@ -42,21 +41,31 @@ module.exports = {
     servicesMenu: {
       selector: "li a[href = '/Services']"
     },
-    companyTextField: {
-      selector: "input.hs-input[name = 'company']"
+    careersMenu:{
+      selector: "#navbarSupportedContent > ul > li:nth-child(1) > a"
     },
-    phoneTextField: {
-      selector: "input.hs-input[name = 'phone']"
+    blogMenu: {
+      selector: "#navbarSupportedContent > ul > li:nth-child(8) > a"
     },
-    messageTextArea: {
-      selector: "textarea.hs-input[name = 'message']"
+    searchBlog: { 
+      selector: "#search-bar"
     },
-    submitBtn: {
-      selector: "input[value = 'Submit']"
+    coloroftext: {
+      selector: "#quotesIndicators > h2", "color": "rgba(33, 37, 41, 1)"
     },
-    nameWarningMsg: {
-      selector: "//div[contains(@class, 'hs_name')]//label[contains(., 'Please complete this required field.')]",
-      locateStrategy: 'xpath'
+    submit: {
+      selector: "#side-bar-container > form > button"
+    },
+    nameinput:{
+      selector: "#name-2a32df81-981f-4329-b943-9f2e76efe5f0"
+    },
+    submitbtm:{
+      selector: "#hsForm_2a32df81-981f-4329-b943-9f2e76efe5f0 > div.hs_submit.hs-submit > div.actions > input"
+    },
+    messageinput: {
+      selector: "#message-2a32df81-981f-4329-b943-9f2e76efe5f0"
     }
-  }
-}
+
+
+    }      
+  };

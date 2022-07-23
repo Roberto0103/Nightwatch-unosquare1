@@ -8,7 +8,7 @@
     tests="1" time="0.003000" timestamp="">
   
     <testcase name="test pages validation" classname="unosquare.unosquare" time="0.003000" assertions="1">  <failure message="browser.page.mainpage is not a function">TypeError: browser.page.mainpage is not a function
-    at Object.test pages validation (C:\Users\roberto.gonzalez\Documents\Unosquare1\tests\unosquare\unosquare.js:22:36)</failure>
+    at Object.test pages validation (C:\Users\roberto.gonzalez\Documents\Unosquare1\tests\unosquare\unosquare.js:23:36)</failure>
 
     
     </testcase>

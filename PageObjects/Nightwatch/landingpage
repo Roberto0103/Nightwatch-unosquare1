@@ -1,0 +1,18 @@
+
+
+module.exports = {
+    url: 'https://nightwatchjs.org/',
+    elements: {
+      
+      contactusMenu: {
+        selector: "li a[href = '/ContactUs']"
+      },
+      industriesMenu: {
+        selector: "li a[href = '/Industries']"
+      }
+     
+      }
+  
+  
+      }      
+    

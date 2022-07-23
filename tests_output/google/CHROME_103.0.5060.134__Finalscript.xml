@@ -5,9 +5,9 @@
 
   <testsuite name="google.Finalscript"
     errors="0" failures="0" hostname="" id="" package="google" skipped="0"
-    tests="1" time="19.03" timestamp="">
+    tests="1" time="8.658" timestamp="">
   
-    <testcase name="Demo test unosquare" classname="google.Finalscript" time="19.03" assertions="9">
+    <testcase name="Demo test unosquare" classname="google.Finalscript" time="8.658" assertions="9">
 
     
 

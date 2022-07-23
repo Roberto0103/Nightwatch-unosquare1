@@ -1,38 +1,35 @@
 
 module.exports = {
-  url: 'https://www.unosquare.com',
-  elements: {
-    contactusMenu: {
-      selector: "li a[href = '/ContactUs']"
-    },
-    industriesMenu: {
-      selector: "li a[href = '/Industries']"
-    },
-    aboutMenu: {
-      selector: "li a[href = '/About']"
-    },
-    servicesMenu: {
-      selector: "li a[href = '/Services']"
-    }
+    
+  'Scrip num#1' : function(browser) {
+    var unosquare = browser.page.mainpage();
+    browser.windowMaximize()
+    
+    unosquare
+    .navigate()
+    .waitForElementVisible('@blogMenu') 
+    .click ('@blogMenu')
+    .assert.visible('@searchBlog')
+    .setValue('@searchBlog', 'services')
+    .click ('@submit')
+    .pause(3*1000)
+    .assert.textEquals('#wrapper > header > div.container-fluid.content-blog > div > div.col-lg-9 > h3', 'RESULTS FOUND FOR THE SEARCH TERM "services"')
+    .assert.urlEquals('https://info.unosquare.com/blog-search?query=services')
   }
 };
 
-  module.exports = {
-    'test pages validation' : function(browser) {
-      
-      var unosquare = browser.page.mainpage();
 
-      unosquare
-      .navigate()
-      .waitForElementVisible('@contactusMenu')
-      .click('@contactusMenu')
-      .click('@industriesMenu')
-      .assert.cssProperty("li a[href = '/About']", 'display', 'block')
-      .assert.containsText("li a[href = '/Services']", "SERVICES")
-      .assert.attributeContains("li a[href = '/Services']", 'class', 'nav')
-      .assert.not.attributeContains("li a[href = '/service']", 'class', 'nav')
-      .assert.titleContains('Nightwatch.js')
-      .assert.urlEquals('https://www.unosquare.com/')
-      
-    }
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

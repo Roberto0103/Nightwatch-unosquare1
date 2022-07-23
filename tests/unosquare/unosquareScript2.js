@@ -1,0 +1,22 @@
+
+
+module.exports = {
+    
+  'Scrip num#2' : function(browser) {
+    var unosquare = browser.page.mainpage();
+    browser.windowMaximize()
+    
+    unosquare
+    .navigate()
+    .waitForElementVisible('@contactusMenu') 
+    .click ('@contactusMenu')
+    .assert.visible('@nameinput')
+    .setValue('@nameinput', 'Omar')
+    .getLocationInView('#contact-us > div:nth-child(3)')
+    .pause(3*1000)
+    .assert.visible('@messageinput')
+    .setValue('@messageinput', 'message of example to validate test')
+    .click ('#hsForm_2a32df81-981f-4329-b943-9f2e76efe5f0 > div.hs_submit.hs-submit > div.actions > input')
+    .pause(4*1000)
+  }
+};

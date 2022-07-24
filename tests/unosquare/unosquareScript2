@@ -1,5 +1,7 @@
 
 
+
+// INTRODUCe INFORMATION ON THE CONTACT US MENU AND SEND IT 
 module.exports = {
     
   'Scrip num#2' : function(browser) {

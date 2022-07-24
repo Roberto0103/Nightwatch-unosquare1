@@ -3,7 +3,8 @@
 
 var validateContactUs = {
   contactUnosquare: function() {
-    this.api.pause(1000);
+    browser.windowMaximize()
+    this.api
     return this.waitForElementVisible('@contactusMenu', 1000)
       .click('@contactusMenu')
       .setValue('@companyTextField', 'QA CoE course')
@@ -13,6 +14,22 @@ var validateContactUs = {
       .waitForElementVisible('@nameWarningMsg')
   }
 };
+
+var validateSearchMenu = {
+  searchbar: function() {
+    browser.windowMaximize()
+    this.api
+    return this.waitForElementVisible('@blogMenu') 
+    .click ('@blogMenu')
+    .assert.visible('@searchBlog')
+    .setValue('@searchBlog', 'services')
+    .click ('@submit')
+    .pause(3*1000)
+    .assert.textEquals('#wrapper > header > div.container-fluid.content-blog > div > div.col-lg-9 > h3', 'RESULTS FOUND FOR THE SEARCH TERM "services"')
+    .assert.urlEquals('https://info.unosquare.com/blog-search?query=services')
+  }
+};
+
 
 var validateIndustries = {
   Industries: function() {
@@ -27,6 +44,7 @@ var validateIndustries = {
 
 module.exports = {
   url: 'https://www.unosquare.com',
+  commands: [validateContactUs ,validateSearchMenu],
   elements: {
     
     contactusMenu: {
@@ -64,8 +82,26 @@ module.exports = {
     },
     messageinput: {
       selector: "#message-2a32df81-981f-4329-b943-9f2e76efe5f0"
+    },
+
+    
+    companyTextField: {
+      selector: "input.hs-input[name = 'company']"
+    },
+    phoneTextField: {
+      selector: "input.hs-input[name = 'phone']"
+    },
+    messageTextArea: {
+      selector: "textarea.hs-input[name = 'message']"
+    },
+    submitBtn: {
+      selector: "input[value = 'Submit']"
+    },
+    nameWarningMsg: {
+      selector: "//div[contains(@class, 'hs_name')]//label[contains(., 'Please complete this required field.')]",
+      locateStrategy: 'xpath'
     }
 
 
-    }      
-  };
+  }
+};

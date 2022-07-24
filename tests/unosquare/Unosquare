@@ -1,4 +1,7 @@
 
+
+//Validate the correct operation of the search menu allocated in the BLOG menu
+
 module.exports = {
     
   'Scrip num#1' : function(browser) {

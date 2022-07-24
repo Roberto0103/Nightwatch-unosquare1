@@ -1,0 +1,14 @@
+
+
+
+module.exports = {
+    'Command example1' : function(browser) {
+      var unosquare = browser.page.mainpage();
+      unosquare
+      .navigate()
+      .searchbar();
+      
+      browser.end();
+    }
+  };
+  

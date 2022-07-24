@@ -1,0 +1,21 @@
+//const mainpage = require("../../PageObjects/Unosquare/mainpage");
+
+
+module.exports = {
+  'test command example' : function(browser) {
+    var unosquare = browser.page.mainpage();
+    unosquare
+    .navigate()
+    .contactUnosquare();
+    
+    browser.end();
+  }
+};
+
+
+//Validate the command called "contactUnosquare" located on the folder Pageobject>unosquare>mainpage.js
+//1. Go to Contact Us
+//2.Fill Phone Number, Company Name and Message
+//3.Click on Submit
+//4.Validate Warning messages about missing fields
+

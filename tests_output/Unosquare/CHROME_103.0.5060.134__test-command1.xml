@@ -3,11 +3,13 @@
             failures="0"
             tests="1">
 
-  <testsuite name="unosquare.unosquareScript2"
+  <testsuite name="unosquare.test-command1"
     errors="0" failures="0" hostname="" id="" package="unosquare" skipped="0"
-    tests="1" time="11.92" timestamp="">
+    tests="1" time="7.486" timestamp="">
   
-    <testcase name="Scrip num#2" classname="unosquare.unosquareScript2" time="11.92" assertions="3">
+    <testcase name="Command example1" classname="unosquare.test-command1" time="7.486" assertions="4">
+
+    
 
     
 
